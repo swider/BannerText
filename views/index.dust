@@ -1,0 +1,17 @@
+{>"layouts/main"/}
+
+{<title}Foo {title}{/title}
+
+
+{<html_body}
+	<h3>BannerText Plugin</h3>
+	<p>A plugin to create a UI for text placement on an image</p>
+
+	<div id="example1">
+		<div>
+			13:52:47
+		</div>
+	</div>
+{/html_body}
+
+{<copy}{copy|s}{/copy}

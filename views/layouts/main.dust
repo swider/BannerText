@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>jQuery MeetUp Hackathon</title>
+	<title>jQuery MeetUp Hackathon{?title} | {title}{/title}</title>
 	<link rel="stylesheet/less" type="text/css" href="css/base.less" />
 	<script src="js/less-1.3.0.min.js"></script>
 </head>
@@ -9,15 +9,11 @@
 	<div id="container">
 		<h2>jQuery MeetUp Hackathon</h2>
 
-		<h3>BannerText Plugin</h3>
-		<p>A plugin to create a UI for text placement on an image</p>
-
-		<div id="example1">
-			<div>
-				13:52:47
-			</div>
-		</div>
+		{+html_body}
+				Oops, something went wrong...
+		{/html_body}
 		
+		<footer id="footer">{copy|s}</footer>
 	</div>
 
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
