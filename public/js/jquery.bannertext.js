@@ -19,8 +19,11 @@
 	}
 
 	BannerText.prototype.init = function(){
-		console.log(this.$el, this.opts);
+		this.$el.children().draggable().on('draggable-drop', $.proxy(this.onDrop, this));
+	};
 
+	BannerText.prototype.onDrop = function(e, dropData){
+		console.log(this.$el, 'dropped', dropData.x, dropData.y);
 	};
 
 	$.fn['bannertext'] = function (opts){

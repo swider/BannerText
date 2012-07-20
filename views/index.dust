@@ -8,9 +8,9 @@
 	<p>A plugin to create a UI for text placement on an image</p>
 
 	<div id="example1">
-		<div>
-			13:52:47
-		</div>
+		<span>Hot Savings</span>
+		<span>Upgrade to Pro &amp; save 50% now</span>
+		<span>13:52:47</span>
 	</div>
 {/html_body}
 
