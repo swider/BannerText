@@ -59,7 +59,7 @@ app.post('/result', function(req, res, next) {
 	console.log(req.body.data);
 	res.render('submit', {
 		title: 'Result',
-		data: req.body.data
+		data: JSON.parse('[' + req.body.data + ']')
 	});
 });
 
