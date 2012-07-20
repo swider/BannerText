@@ -56,6 +56,7 @@ app.get('/', function(req, res, next) {
 });
 
 app.post('/result', function(req, res, next) {
+	console.log(req.body.data);
 	res.render('submit', {
 		title: 'Result',
 		data: req.body.data

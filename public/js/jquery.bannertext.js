@@ -19,12 +19,15 @@
 	}
 
 	BannerText.prototype.init = function(){
-		this.$el.children().draggable().on('draggable-drop', $.proxy(this.onDrop, this));
+		var $dragables = this.$el.children();
+		$dragables.draggable().on('draggable-drop', $.proxy(this.onDrop, this));
+		$dragables.each(function(i, el){ $(el).data('id', i); });
+		this.$el.data('numDragables', $dragables.length);
 	};
 
 	BannerText.prototype.onDrop = function(e, dropData){
-		console.log(this.$el, 'dropped', dropData.x, dropData.y);
-		this.$el.data('bannerTextData', '{ x: '+dropData.x+', y: '+dropData.y+'}');
+		console.log(dropData.$el, 'dropped', dropData.x, dropData.y);
+		this.$el.data('bannerTextData'+dropData.$el.data('id'), '"x": '+dropData.x+', "y": '+dropData.y);
 	};
 
 	$.fn['bannertext'] = function (opts){

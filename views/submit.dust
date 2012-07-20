@@ -4,7 +4,7 @@
 
 
 {<html_body}
-    <p>Result {data}</p>
+    <p>Results: {#data}{~n}NAME: {name} X:{x} Y:{y} {/data}</p>
 {/html_body}
 
 {<copy}{copy|s}{/copy}
