@@ -55,10 +55,10 @@ app.get('/', function(req, res, next) {
 	});
 });
 
-app.get('/result', function(req, res, next) {
+app.post('/result', function(req, res, next) {
 	res.render('submit', {
 		title: 'Result',
-		data: req.data
+		data: req.body.data
 	});
 });
 

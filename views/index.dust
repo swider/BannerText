@@ -12,6 +12,11 @@
 		<span>Upgrade to Pro &amp; save 50% now</span>
 		<span>13:52:47</span>
 	</div>
+
+	<form action="result" method="post">
+		<input type="hidden" name="data" />
+		<input type="submit" class="submit" value="Submit" />
+	</form>
 {/html_body}
 
 {<copy}{copy|s}{/copy}

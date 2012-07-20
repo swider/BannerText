@@ -24,6 +24,7 @@
 
 	BannerText.prototype.onDrop = function(e, dropData){
 		console.log(this.$el, 'dropped', dropData.x, dropData.y);
+		this.$el.data('bannerTextData', '{ x: '+dropData.x+', y: '+dropData.y+'}');
 	};
 
 	$.fn['bannertext'] = function (opts){
